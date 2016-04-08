@@ -1,0 +1,542 @@
+/* 
+
+CSS Code reference from http://www.w3schools.com/ and CodeArchive3 of the weekly chats
+
+*/
+
+/* -----------------------
+Base styles
+------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Calligraffitti|Oswald);
+
+body
+{
+	margin: 0;
+	padding: 0;
+	color: #eee;
+	background-color: #eee;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 0.8em;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	margin: 0 0 .5em;
+	font-weight: 500;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+}
+
+h1 
+{ 
+	font-size: 2.25em;
+	line-height: 50%; 
+} 
+
+h2 { font-size: 1.75em; } 
+
+h3 { 
+	font-size: 1.375em;
+	color: #B685FF; 
+} 
+
+h4 
+{ 
+	font-size: 1.4em;
+	font-family: 'Calligraffitti', cursive; 
+	line-height: 50%;
+	text-transform: lowercase;
+	color: #B685FF;
+} 
+
+h5 { font-size: 1em; } 
+
+h6 { font-size: .875em; } 
+
+p
+{
+	margin: 10px 1px;
+	line-height: 1.5;
+	font-size: 0.9em;
+
+}
+
+blockquote
+{
+	padding: 1em 2em;
+	margin: 0 0 2em;
+	border-left: 5px solid #eee;
+}
+
+hr
+{
+	height: 0;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	border: 0;
+	border-top: 1px solid #ddd;
+}
+
+table
+{
+	background-color: transparent;
+	border-spacing: 0;
+	border-collapse: collapse;
+	border-top: 1px solid #ddd;
+}
+
+th, td
+{
+	padding: .5em 1em;
+	vertical-align: top;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+.purplefont
+{
+	color: #B685FF;
+    font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+}
+
+a:link 
+{ 
+	color: #B685FF;
+	text-decoration: none;
+ }
+
+a:visited { color: #B685FF; }
+a:focus { color: black; }
+a:hover { color: #eee; }
+a:active { color: #B685FF; }
+
+/* -----------------------
+Layout styles
+------------------------*/
+
+.container
+{
+	max-width: 70em;
+	margin: 0 auto;
+}
+
+.header
+{
+	color: #000;
+	background: #B685FF;
+	padding: 1em 1.25em;
+}
+
+.header-heading 
+{ 
+	margin: 0; 
+	font-size: 3em;
+}
+
+.nav-bar
+{
+	background: #000;
+	padding: 0;
+}
+
+.content
+{
+	overflow: hidden;
+	padding: 1em 1.25em;
+	background-color: #1C1C1C;
+}
+
+.main, .aside
+{
+	margin-bottom: 1em;
+}
+
+.footer
+{
+	color: #fff;
+	background: #000;
+	padding: 1em 1.25em;
+    font-size: 0.9em;
+
+}
+
+/* -----------------------
+Nav
+------------------------*/
+
+.nav
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nav li
+{
+	display: inline;
+	margin: 0;
+}
+
+.nav a
+{
+	display: block;
+	padding: .7em 1.25em;
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid gray;
+}
+
+.nav a:link 
+{ 
+	color: white;
+	font-size: 1.5em;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase; 
+}
+
+.nav a:visited { color: white; }
+
+.nav a:focus
+{
+	color: black;
+	background-color: white;
+	outline: 0; /* Remove dotted outline when the div is clicked in some browsers */
+}
+
+.nav a:hover
+{
+	color: #000;
+	background-color: #B685FF;
+}
+
+.nav a:active
+{
+	color: white;
+	background-color: #B685FF;
+}
+
+
+/* -----------------------
+Single styles
+------------------------*/
+
+.img-responsive { max-width: 100%; }
+
+.table
+{
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+.list-unstyled
+{
+	padding-left: 0;
+	list-style: none;
+}
+
+.list-inline
+{
+	padding-left: 0;
+	margin-left: -5px;
+	list-style: none;
+}
+
+.list-inline > li
+{
+	display: inline-block;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+/* -----------------------
+Wide styles
+------------------------*/
+
+@media (min-width: 40em)
+{
+	.header  { padding: 1.5em 3em; }
+	.nav-bar { padding: 0em 3em; }
+	.content { padding: 2em 3em; }
+
+	.main
+	{
+		float: left;
+		width: 65%;
+		margin-right: 5%;
+		margin-bottom: 1em;
+	}
+
+	.aside
+	{
+		float: left;
+		width: 30%;
+		margin-bottom: 1em;
+	}
+
+	.footer { padding: 2em 3em; }
+	
+	.nav li
+	{
+		display: inline;
+		margin: 0 1em 0 0;
+	}
+	
+	.nav a
+	{
+		display: inline;
+		padding: 0;
+		border-bottom: 0;
+	}
+}
+
+/* -----------------------
+Now Showing Page Movie Layout
+------------------------*/
+
+.movie
+{ 
+width : 100%; 
+padding-bottom : 10px; 
+} 
+
+.moviepic 
+{ 
+float : left; 
+border : 1px solid #000; 
+height : 197px; 
+width : 133px;
+} 
+
+.sessionbox 
+{
+background-color:#B685FF;
+padding-left:2px;
+
+}
+
+.moviename, .nowshowingtext, .sessionbox
+{ 
+margin-left : 143px; 
+} 
+
+.moviename, .nowshowingtext
+{ 
+font-size : 0.88em; 
+} 
+
+.sessiontext
+{
+font-size:0.9em;
+font-weight: normal;
+}
+
+.sessiontext, .nowshowingtext
+{ 
+padding-top : 4px; 
+padding-bottom : 4px; 
+} 
+
+.sessiontext { color : #000; } 
+
+
+.moviename, .sessiontimestitle
+{ 
+font-weight : bold; 
+
+} 
+
+.moviename 
+{ 
+color : #B685FF; 
+background-color : #0f0f0f; 
+} 
+
+.sessiontimestitle 
+{
+color: #000;
+font-size : 1em; 
+text-decoration: underline;
+}
+
+.expandable{
+	height: 0px;
+	overflow: hidden;
+}
+
+.nowshowingtext a:link
+{
+		text-decoration: none;
+		color: #fff;
+
+}
+
+.overridelink
+{
+	color: #fff !important;
+}
+
+.overridelink:hover
+{
+	color: #fff !important;
+}
+
+.overridelink:focus
+{
+	color: #fff !important;
+	outline: 0; /* Remove dotted outline when the div is clicked in some browsers */
+}
+
+
+.overridelink:active
+{
+	color: #fff !important;
+}
+
+
+
+
+
+
+
+/* -----------------------
+Contact Form 
+------------------------*/
+
+textarea 
+{
+	resize: none;	
+	height: 100px;
+}
+
+button, input, select, textarea
+{
+	font-family: inherit;
+	font-size: 1em;
+	background-color: #B685FF;
+	color: #1a1a1a;
+	border: 1px solid #000;
+	border-radius: 0;
+	width: 350px;
+	max-width: 100%;
+
+	-webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+          box-sizing: border-box;
+}
+
+/* code so that chrome autofill won't make the box pale yellow */
+input:-webkit-autofill 
+{
+    -webkit-box-shadow: 0 0 0px 1000px #B685FF inset;
+}
+
+.address
+{
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+/* Button style source: CodeArchive3 from the chat */
+
+.btn
+{
+	color: #000 !important;
+	background-color: #B685FF;
+	border-color: #222;
+	display: inline-block;
+	padding: .5em 1em;
+	margin-bottom: 0;
+	font-weight: 400;
+	line-height: 1.2;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-radius: .2em;
+	text-decoration: none;
+}
+
+.btn:hover
+{
+	color: #fff !important;
+	background-color: #0f0f0f;
+}
+
+.btn:focus
+{
+	color: #fff !important;
+	background-color: #000;
+	outline: 0; /* Remove dotted outline when the div is clicked in some browsers */
+}
+
+.btn:active
+{
+	color: #fff !important;
+	background-color: #000;
+	
+}
+
+/* Tables */
+
+table 
+{
+	width: 100%;
+}
+
+/* need to make the td inputs 100% so that they dont get cut off when the view is smaller */
+td > input, td > select
+{
+	width:100%;
+}
+
+td > div
+{
+	text-align: right;
+	overflow: hidden;
+}
+
+th > div
+{
+	text-align: right;
+}
+
+td, table, th
+{
+	border: none;
+}
+
+th 
+{
+	background-color: #0f0f0f;
+	color: #B685FF; 
+}
+
+/* code so that the columns in the ticket table do not move when the price gets larger. */
+
+.fixed_table
+{
+	table-layout: fixed;
+}
+
+.col1
+{
+	width:35%;
+}
+
+.col2
+{
+	width:40%;
+}
+
+.col3
+{
+	width:25%;
+}
+
+
+
+
